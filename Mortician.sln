@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortician", "Mortician\Mortician.csproj", "{1DCC0688-3063-4F0F-B267-AA5B019B6587}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DCC0688-3063-4F0F-B267-AA5B019B6587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCC0688-3063-4F0F-B267-AA5B019B6587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCC0688-3063-4F0F-B267-AA5B019B6587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCC0688-3063-4F0F-B267-AA5B019B6587}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68C80890-0B01-43FB-9D09-E80D4A85A6B5}
+	EndGlobalSection
+EndGlobal
