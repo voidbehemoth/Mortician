@@ -2,7 +2,7 @@
   "HarmonyId": "voidbehemoth.mortician",
   "DisplayName": "Mortician",
   "Authors": [ "VoidBehemoth" ],
-  "Description": "More will tools.",
+  "Description": "More last will tools.",
   "Version": "1.0.0",
   "Platforms": [ "Windows", "Mac" ],
   "RequiredMods": [],
@@ -10,20 +10,20 @@
   "Settings": {
     "CheckboxSettings": [
       {
-        "Name": "Placeholder Checkbox",
-        "SettingID": "placeholder.checkbox",
-        "Description": "The placeholder checkbox of all time",
+        "Name": "Remove Comments When Pasting Will",
+        "SettingID": "remove_comments.checkbox",
+        "Description": "Whethor or not to remove comments from the will when pasting them into the chat.",
         "DefaultValue": true,
         "AvailableInGame": true
       }
     ],
     "TextInputSettings": [
       {
-        "Name": "Placeholder TextInput",
-        "SettingID": "placeholder.textinput",
+        "Name": "Comment Prefix",
+        "SettingID": "prefix.textinput",
         "Description": "The placeholder inputbox of all time",
-        "DefaultValue": "Default Text",
-        "Regex": "[A-Za-z]",
+        "DefaultValue": "//",
+        "Regex": "^([^<> ]+[ ]*)+",
         "CharacterLimit": 10,
         "AvailableInGame": true
       }

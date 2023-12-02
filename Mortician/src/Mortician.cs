@@ -1,4 +1,8 @@
 ﻿using SML;
+using HarmonyLib;
+using Game.Interface;
+using System.Text.RegularExpressions;
+using System;
 
 namespace Mortician
 {
@@ -19,5 +23,19 @@ namespace Mortician
         public const string PLUGIN_NAME = "Mortician";
 
         public const string PLUGIN_VERSION = "1.0.0";
+    }
+
+    [HarmonyPatch(typeof(LastWillPanel), nameof(LastWillPanel.HandleOnRaiseSendToChat))]
+    public class RemoveCommentsFromWillPaste
+    {
+        [HarmonyPrefix]
+        public static void Prefix(ref string text)
+        {
+            if (!ModSettings.GetBool("Remove Comments When Pasting Will", "voidbehemoth.mortician")) return;
+
+            string sanitizedCommentCharacter = Regex.Replace(ModSettings.GetString("Comment Prefix", "voidbehemoth.mortician"), "[-.\\+*?\\[^\\]$(){}=!<>|:\\\\]", "\\\\$0");
+
+            text = Regex.Replace(text, $"{ sanitizedCommentCharacter }.*$", "");
+        }
     }
 }

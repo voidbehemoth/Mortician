@@ -13,7 +13,7 @@
 		<SalemModLoaderLink>https://github.com/Curtbot9000/SalemModLoader/releases/latest/download/SalemModLoader.dll</SalemModLoaderLink>
 		
 		<!--Be sure to replace this with the path to the Steam Library (use two slashes after drives)-->
-		<SteamLibrarypath>VALUE</SteamLibrarypath>
+		<SteamLibrarypath>E://SteamLibrary/</SteamLibrarypath>
 	</PropertyGroup>
 
 	<ItemGroup>
